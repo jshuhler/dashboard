@@ -12,15 +12,15 @@ ul {
 }
 
 h1 {
-
+    font-size: 1.75em;
 }
 
 h2 {
-
+    font-size: 1.45em;
 }
 
 h3 {
-
+    font-size: 1.1em;
 }
 
 /* ===================================
@@ -65,20 +65,35 @@ h3 {
     background: magenta; /* change to some off white after building */
 }
 
+.main h2 {
+    padding-bottom: 10px;
+}
+
 /* ===================================
    projects
    =================================== */
-.main .projects .content{
+.main .projects {
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.projects .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 25px;
 }
 
 .projects .card {
     border-radius: 8px;
     padding: 20px 30px;
+    height: 200px;
     border-left: solid 10px darkgoldenrod;
+    box-shadow: 0 4px 6px 0 rgb(0, 0, 0, 0.2)
+}
+
+.projects .title {
+    font-weight: 700;
+    font-size: 1.1em;
 }
 
 .projects .icons {
