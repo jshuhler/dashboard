@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="png" href="./img/favicon.png"> 
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search">
+                <form action="/search" method="get">
+                    <label for="site-search"></label>
+                    <input type="search" id="site-search" name="search" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="notification">
+                bell
+                icon
+                <h2>Logged in Name</h2>
+            </div>
+            <div class="welcome">
+                icon
+                <h3>Hi there,</h3>
+                <h1>Logged in Name (@username)</h1>
+            </div>
+            <div class="buttons">
+                <button id="new" class="button">New</button>
+                <button id="upload" class="button">Upload</button>
+                <button id="share" class="button">Share</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="title">Dashboard</div>
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Messages</li>
+                    <li>History</li>
+                    <li>Tasks</li>
+                    <li>Community</li>
+                </ul>
+            </div>
+            <div class="settings">
+                <ul>
+                    <li>Settings</li>
+                    <li>Support</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="projects">
+                <h2>Your Projects</h2>
+                <div class="card">
+                    <p class="title">Project 1</p>
+                    <p>Placeholder Ipsum Text</p>
+                </div>
+                <div class="card">
+                    <p class="title">Project 2</p>
+                    <p>Placeholder Ipsum Text</p>
+                </div>
+                <div class="card">
+                    <p class="title">Project 3</p>
+                    <p>Placeholder Ipsum Text</p>
+                </div>
+                <div class="card">
+                    <p class="title">Project 4</p>
+                    <p>Placeholder Ipsum Text</p>
+                </div>
+                <div class="card">
+                    <p class="title">Project 5</p>
+                    <p>Placeholder Ipsum Text</p>
+                </div>
+                <div class="card">
+                    <p class="title">Project 6</p>
+                    <p>Placeholder Ipsum Text</p>
+                </div>
+            </div>
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <p class="card">
+                    <p class="title">Site Maintenance</p>
+                    <p>Placeholder Ipsum Text</p>
+                </p>
+                <p class="card">
+                    <p class="title">Community Share Day</p>
+                    <p>Placeholder Ipsum Text</p>
+                </p>
+                <p class="card">
+                    <p class="title">Updated Privacy Policy</p>
+                    <p>Placeholder Ipsum Text</p>
+                </p>
+            </div>
+            <div class="trending">
+                <h2>Trending</h2>
+                <div class="card">Placeholder</div>
+                <div class="card">Placeholder</div>
+                <div class="card">Placeholder</div>
+                <div class="card">Placeholder</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
