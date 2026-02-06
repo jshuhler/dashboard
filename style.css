@@ -14,9 +14,11 @@
     --h3-font-size: 1.1em;
     --h4-font-size: 0.8em;
     --card-color: #f5f5f5;
+    --main-background: #e2e8f0;
+    --sidebar-background: #1992d4;
     --border-radius: 8px;
     --box-shadow: 0 4px 6px 0 rgb(0, 0, 0, 0.2);
-    --main-background: #e2e8f0;
+
 }
 
 ul {
@@ -52,6 +54,22 @@ h4 {
    =================================== */
 .header {
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 15px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.header .button {
+    background-color: var(--sidebar-background);
+    border-radius: 20px;
+    color: var(--card-color);
+    font-weight: 600;
+    padding: 8px 25px;
+    border: none;
+    cursor: pointer;
 }
 
 /* ===================================
@@ -62,21 +80,27 @@ h4 {
     display: grid;
     grid-template-rows: auto;
     /* grid-template-rows: 1fr 5fr 5fr; */
-    background: #1992d4;
+    background: var(--sidebar-background);
     padding: 15px;
     gap: 25px;
 }
 
+.sidebar .title {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-self: center;
+}
+
 .sidebar .icon {
-    height: 2em;
+    height: 4em;
     width: auto;
 }
 
-.sidebar .title {
+.sidebar .name {
     font-size: var(--h1-font-size);
     font-weight: 700;
     color: white;
-    align-items: center;
+    align-self: center;
 }
 
 .sidebar .nav,
@@ -86,7 +110,7 @@ h4 {
 
 .sidebar li {
     font-size: var(--h2-font-size);
-    padding: 15px 0px;
+    margin: 20px 0px;
     color: var(--card-color);
     font-weight: 450;
 }
@@ -94,6 +118,10 @@ h4 {
 .sidebar li span {
     vertical-align: middle;
     padding-left: 15px;
+}
+
+.sidebar li span:hover {
+    cursor: pointer;
 }
 
 .sidebar svg {
