@@ -10,6 +10,12 @@ Creating [The Odin Project's](https://www.theodinproject.com/lessons/node-path-i
 - [Sidebar icons from Material Design Icons](https://pictogrammers.com/library/mdi/)
 - [User icons from Flaticon](https://www.flaticon.com/authors/sudowoodo)
 
+## to-do
+- [ ] set max height on header
+- [ ] set max width on sidebar
+- [ ] fix the width of the search bar
+- [ ] change announcements to cut text off after x number of rows
+
 ## icons
 ### sidebar
 - home: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
