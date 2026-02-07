@@ -4,7 +4,7 @@ Creating [The Odin Project's](https://www.theodinproject.com/lessons/node-path-i
 [Live Preview.](https://jshuhler.github.io/dashboard)
 
 ## skills used and learned
-- Using grid layouts to create dynamically sized website layouts with multiple nested grids
+- Using grid layouts to create dynamically sized website layouts with multiple nested grids. Could this have been better and more easily done with grid and flexbox? Yes. But I wanted grid practice.
 - More practice targeting specific HTML elements with CSS styles
 
 - [Sidebar icons from Material Design Icons](https://pictogrammers.com/library/mdi/)
